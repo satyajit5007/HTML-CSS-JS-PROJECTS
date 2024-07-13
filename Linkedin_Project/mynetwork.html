@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkedin clone</title>
+    <link rel="stylesheet" href="mynetwork.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" ></a>
+
+        <div class="search-box">
+            <img src="images/search.png" alt="">
+            <input type="text" placeholder="Search">
+        </div>
+
+    </div>
+
+    <div class="navbar-center">
+        <ul>
+            <li><a href="index.html" class="active-link"><img src="images/home.png" ><span>Home</span></a></li>
+            <li><a href=""><img src="images/network.png" ><span>My Network</span></a></li>
+            <li><a href=""><img src="images/jobs.png" ><span>Jobs</span></a></li>
+            <li><a href=""><img src="images/message.png" ><span>Messaging</span></a></li>
+            <li><a href="notification.html"><img src="images/notification.png" ><span>Notifications</span></a></li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <div class="online">
+            <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+        </div>
+    </div>
+
+
+    <!-- PROFILE MENU  drop down -->
+
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="images/user-1.png" alt="">
+            <div>
+                <h3>Rayan Walton</h3>
+                <a href="profile.html">See your profile</a>
+            </div>
+        </div>
+        <hr>
+
+        <a href="#" class="profile-menu-link">
+            <img src="images/feedback.png" alt="">
+            <p>Give Feedback</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/setting.png" alt="">
+            <p>Settings & Privacy</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/help.png" alt="">
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/display.png" alt="">
+            <p>Display & Accessibilty</p>
+            <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+            <img src="images/logout.png" alt="">
+            <p>logout</p>
+            <span>></span>
+        </a>
+
+    </div>
+</div>
+</nav>
+
+ <!----------------------------------------------------------navbar close  ---------------------------------------------------------->
+
+
+<!-- CONTAINER -->
+<div class="container-left">
+    div.
+</div>
+
+
+
+<script>
+
+    let profileMenu = document.getElementById("profileMenu");
+
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+
+</script>
+
+<script>
+    let sidebarActivity =  document.getElementById("sidebarActivity");
+    let morelink =  document.getElementById("showMoreLink");
+    function toggleActivity(){
+        sidebarActivity.classList.toggle("open-activity");
+        if(sidebarActivity.classList.contains("open-activity")){
+             morelink.innerHTML ="Show less <b>↑<b>";
+        }
+        else{
+        morelink.innerHTML ="Show more <b>↓<b> ";
+        }
+
+
+    }
+
+</script>
+
+
+</body>
+</html>
